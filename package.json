@@ -2,6 +2,7 @@
   "name": "instagram-following-safari",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "description": "Keep Instagram's web feed on Following in Safari on iOS and macOS.",
   "scripts": {
     "test": "node --test",

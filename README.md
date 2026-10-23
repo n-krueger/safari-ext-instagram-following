@@ -110,3 +110,7 @@ With the extension and #blockit enabled, logged into Instagram:
 - [ ] #blockit still removes/blocks Reels, Discover, and Explore as before.
 
 **Validation so far:** automated tests and both native build checks pass. Live, authenticated Instagram behavior, iOS device installation, and coexistence with #blockit still need the manual checks above.
+
+## License
+
+[MIT](LICENSE) © 2026 Nils Krüger.
