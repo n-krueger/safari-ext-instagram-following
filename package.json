@@ -1,0 +1,16 @@
+{
+  "name": "instagram-following-safari",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Keep Instagram's web feed on Following in Safari on iOS and macOS.",
+  "scripts": {
+    "test": "node --test",
+    "xcode:generate": "bash scripts/generate-xcode-project.sh"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

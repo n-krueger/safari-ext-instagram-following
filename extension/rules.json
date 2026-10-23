@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [{ "key": "variant", "value": "following" }]
+          }
+        }
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://(www\\.)?instagram\\.com/(\\?[^#]*)?$",
+      "isUrlFilterCaseSensitive": true,
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "regexFilter": "^https://(www\\.)?instagram\\.com/\\?([^&#]*&)*variant=following(&[^#]*)?$",
+      "isUrlFilterCaseSensitive": true,
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

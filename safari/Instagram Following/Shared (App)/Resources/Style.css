@@ -1,0 +1,72 @@
+* {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+}
+
+:root {
+    color-scheme: light dark;
+
+    --spacing: 20px;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 12px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    max-width: 480px;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    font: -apple-system-short-body;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+body:not(.platform-mac, .platform-ios) :is(.platform-mac, .platform-ios) {
+    display: none;
+}
+
+body.platform-ios .platform-mac {
+    display: none;
+}
+
+body.platform-mac .platform-ios {
+    display: none;
+}
+
+body.platform-ios .platform-mac {
+    display: none;
+}
+
+body:not(.state-on, .state-off) :is(.state-on, .state-off) {
+    display: none;
+}
+
+body.state-on :is(.state-off, .state-unknown) {
+    display: none;
+}
+
+body.state-off :is(.state-on, .state-unknown) {
+    display: none;
+}
+
+button {
+    font-size: 1em;
+}
