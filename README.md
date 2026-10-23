@@ -112,3 +112,16 @@ With the extension and #blockit enabled, logged into Instagram:
 ## License
 
 [MIT](LICENSE) © 2026 Nils Krüger.
+
+## Icon artwork
+
+The icon combines an Instagram-inspired gradient and camera outline with a 🫂 overlay rendered using macOS’s Apple Color Emoji font. Instagram’s trademarks and third-party emoji artwork remain the property of their respective owners; they are not licensed by this project’s MIT license. This project is not affiliated with Instagram or Apple.
+
+To regenerate every extension icon, iOS/macOS app icon, and setup-screen image:
+
+```sh
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
+  xcrun swift scripts/generate-icons.swift
+```
+
+The generator uses AppKit with no additional dependencies. iOS icons are opaque so the system can apply its icon mask; macOS icons include rounded corners and Dock padding. Generated PNGs are included, so building the extension does not require running the generator.
