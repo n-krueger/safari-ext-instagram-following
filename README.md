@@ -101,15 +101,13 @@ With the extension and #blockit enabled, logged into Instagram:
 - [x] Open `/`, `/?variant=home`, and `/?variant=home&utm_source=test`: Following loads, retaining the extra query parameter.
 - [x] Open `/?variant=following` directly and reload: no redirect loop.
 - [x] Confirm the visible feed is Following, not merely that the address changed.
-- [ ] For you is hidden where Instagram renders it as an identifiable feed link/tab; any remaining control cannot leave the page on `variant=home`.
-- [ ] The back-to-home arrow beside Following is hidden; the Following heading, normal Home navigation, and Back controls on profiles/posts/dialogs remain visible.
-- [ ] Visit a profile or post, then tap the Instagram logo/Home: Following loads.
-- [ ] Use Back/Forward and restore/background/foreground the tab: the main feed stays on Following.
-- [ ] Long-press Home → Open in New Tab on iOS; Command-click Home on macOS: the new tab opens Following.
-- [ ] Profiles, individual posts, messages, and login still work.
-- [ ] #blockit still removes/blocks Reels, Discover, and Explore as before.
-
-**Validation so far:** automated tests and both native build checks pass. Live, authenticated Instagram behavior, iOS device installation, and coexistence with #blockit still need the manual checks above.
+- [x] For you is hidden where Instagram renders it as an identifiable feed link/tab; any remaining control cannot leave the page on `variant=home`.
+- [x] The back-to-home arrow beside Following is hidden; the Following heading, normal Home navigation, and Back controls on profiles/posts/dialogs remain visible.
+- [x] Visit a profile or post, then tap the Instagram logo/Home: Following loads.
+- [x] Use Back/Forward and restore/background/foreground the tab: the main feed stays on Following.
+- [x] Long-press Home → Open in New Tab on iOS; Command-click Home on macOS: the new tab opens Following.
+- [x] Profiles, individual posts, messages, and login still work.
+- [x] #blockit still removes/blocks Reels, Discover, and Explore as before.
 
 ## License
 
